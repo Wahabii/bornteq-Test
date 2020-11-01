@@ -1,0 +1,32 @@
+
+<h1>Gestion des utilisateurs</h1>
+
+<input
+  (keyup.enter)="createPost(title)" #title
+  type="text" class="form-control">
+<ul class="list-group">
+  <li
+    *ngFor="let post of posts"
+    class="list-group-item">
+
+    <button
+      (click)="DetailsPost(post)"
+      mat-button color="primary"> Details </button>
+
+
+    <button
+      (click)="updatePost(post)"
+      mat-stroked-button color="accent">Update</button>
+
+      <button
+      (click)="deletePost(post)"
+      mat-stroked-button color="warn">Delete</button>
+
+      {{ post.name }}
+
+</li>
+</ul>
+
+
+
+

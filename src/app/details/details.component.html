@@ -1,0 +1,31 @@
+
+<h1>User Details</h1>
+
+<ul class="list-group">
+  <li
+     *ngIf="dataPostDetails"
+    class="list-group-item">
+
+      <h1>Name</h1>
+      {{ dataPostDetails.name }}
+
+      <h1>Username</h1>
+      {{ dataPostDetails.username }}
+
+      <h1>Company</h1>
+      {{ dataPostDetails.company.name }}
+
+      <h1>Phone</h1>
+      {{ dataPostDetails.phone}}
+
+      <h1>Website</h1>
+      {{ dataPostDetails.website }}
+
+      <h1>Email</h1>
+      {{ dataPostDetails.email }}
+
+      <h1>Adress</h1>
+      {{ dataPostDetails.address.street}}
+
+  </li>
+</ul>
